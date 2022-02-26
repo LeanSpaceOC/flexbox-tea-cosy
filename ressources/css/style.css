@@ -1,0 +1,39 @@
+* {
+  outline: 1px red solid;
+  box-sizing: ;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 137.50%;
+  color: seashell;
+  background-color: black;
+  opacity: 0.7;
+  text-align: center;
+}
+
+a {
+  color: seashell;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid seashell;
+  height: 69px;
+  margin: 0 10px;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+}
+
+nav {
+  width: 320px;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
