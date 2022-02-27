@@ -1,17 +1,14 @@
 * {
   outline: 1px red solid;
-  box-sizing: ;
 }
-
 body {
   font-family: Helvetica, sans-serif;
   font-size: 137.50%;
   color: seashell;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.9;
   text-align: center;
 }
-
 a {
   color: seashell;
 }
@@ -24,16 +21,47 @@ header {
   border-bottom: 1px solid seashell;
   height: 69px;
   margin: 0 10px;
+  
 }
-
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
 header img {
   height: 50px;
   width: auto;
 }
-
 nav {
   width: 320px;
   display: inline-flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: black;
+}
+
+.jumbo {
+  height: 700px;
+  max-width: 1200px;
+  background: url("../images/img-mission-background.jpg");
+  /* add background image responsive properties */
+  background-size: cover;
+  background-position:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jumbo-relative {
+  position: relative;
+  top: 70px;
+}
+.jumbo-text {
+ background-color: black;
+ width: 100%;
+ line-height: 0.5;
+}
+.jumbo-text .h4 {
+  font-weight: lighter;
 }
