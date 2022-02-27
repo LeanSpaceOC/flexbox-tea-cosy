@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px red solid;
-}
+} */
 body {
   font-family: Helvetica, sans-serif;
   font-size: 137.50%;
@@ -19,9 +19,8 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   border-bottom: 1px solid seashell;
-  height: 69px;
+  min-height: 69px;
   margin: 0 10px;
-  
 }
 .header-fixed {
   position: fixed;
@@ -42,6 +41,16 @@ nav {
   background-color: black;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  position: relative;
+  top: 70px;
+}
+
 .jumbo {
   height: 700px;
   max-width: 1200px;
@@ -53,15 +62,30 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.jumbo-relative {
-  position: relative;
-  top: 70px;
-}
+
 .jumbo-text {
  background-color: black;
  width: 100%;
- line-height: 0.5;
+ line-height: 0.9;
 }
-.jumbo-text .h4 {
-  font-weight: lighter;
+
+.tea-month {
+  max-width: 1000px;
+  margin-top: 70px;
+}
+.tea-month h4 {
+  line-height: 0.2;
+}
+.tea-month-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  margin: 10px 10px;
+}
+.card img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
 }
