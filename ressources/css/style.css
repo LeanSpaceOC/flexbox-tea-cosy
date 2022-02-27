@@ -21,6 +21,7 @@ header {
   border-bottom: 1px solid seashell;
   min-height: 69px;
   margin: 0 10px;
+  background-color: black;
 }
 .header-fixed {
   position: fixed;
