@@ -63,7 +63,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
 .jumbo-text {
  background-color: black;
  width: 100%;
@@ -89,4 +88,21 @@ main {
   width: 300px;
   height: 200px;
   margin-bottom: 10px;
+}
+
+.locations {
+  height: 500px;
+  max-width: 1200px;
+  background: url("../images/img-locations-background.jpg");
+  /* add background image responsive properties */
+  background-size: cover;
+  background-position:center;
+}
+.locations-fiches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fiche {
+  background-color: black;
 }
