@@ -69,9 +69,15 @@ main {
  line-height: 0.9;
 }
 
+.jumbo-text h4 {
+  max-width: 1200px;
+  width: 93.5vw;
+}
+
+
 .tea-month {
   max-width: 1000px;
-  margin-top: 70px;
+  margin: 70px auto;
 }
 .tea-month h4 {
   line-height: 0.2;
@@ -92,11 +98,19 @@ main {
 
 .locations {
   height: 500px;
+  padding: 20px;
   max-width: 1200px;
+  width: 93.5vw;
   background: url("../images/img-locations-background.jpg");
   /* add background image responsive properties */
   background-size: cover;
   background-position:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.locations h2 {
+  margin: 15px 0;
 }
 .locations-fiches {
   display: flex;
@@ -104,5 +118,15 @@ main {
   justify-content: center;
 }
 .fiche {
+  opacity: 1;
   background-color: black;
+  width:300px;
+  margin: 5px 20px;
 }
+/* media screen with .locations height at auto*/
+@media screen and (max-width: 728px) {
+  .locations {
+    height: auto;
+  }
+}
+
