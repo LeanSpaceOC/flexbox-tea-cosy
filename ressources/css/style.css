@@ -41,6 +41,25 @@ nav {
   flex-wrap: wrap;
   background-color: black;
 }
+@media screen and (max-width: 500px) {
+  header {
+    width: 100 vw;
+    margin: 0;
+    padding: 10px;
+  }
+  nav {
+    width: 100%;
+    margin: 10px 0;
+  }
+  /* nav a {
+    margin-right: 5px;
+  } */
+}
+
+main, footer {
+  position: relative;
+  top: 70px;
+}
 
 main {
   display: flex;
@@ -48,15 +67,12 @@ main {
   align-items: center;
   justify-content: center;
   margin: 0 10px;
-  position: relative;
-  top: 70px;
 }
 
 .jumbo {
   height: 700px;
   max-width: 1200px;
   background: url("../images/img-mission-background.jpg");
-  /* add background image responsive properties */
   background-size: cover;
   background-position:center;
   display: flex;
@@ -68,7 +84,6 @@ main {
  width: 100%;
  line-height: 0.9;
 }
-
 .jumbo-text h4 {
   max-width: 1200px;
   width: 93.5vw;
@@ -95,22 +110,26 @@ main {
   height: 200px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 728px) {
+  .card img {
+    width: 270px;
+    object-fit: cover;
+  }
+}
 
 .locations {
-  height: 500px;
-  padding: 20px;
-  max-width: 1200px;
-  width: 93.5vw;
-  background: url("../images/img-locations-background.jpg");
-  /* add background image responsive properties */
-  background-size: cover;
-  background-position:center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 500px;
+  max-width: 1200px;
+  width: 93.5vw;
+  background: url("../images/img-locations-background.jpg");
+  background-size: cover;
+  background-position:center;
 }
 .locations h2 {
-  margin: 15px 0;
+  margin: 5px 0;
 }
 .locations-fiches {
   display: flex;
@@ -123,7 +142,7 @@ main {
   width:300px;
   margin: 5px 20px;
 }
-@media screen and (max-width: 728px) {
+@media screen and (max-width: 1090px) {
   .locations {
     height: auto;
   }
@@ -142,5 +161,8 @@ footer {
 @media screen and (max-width: 728px) {
   .locations {
     height: auto;
+  }
+  .footer-copyright {
+    text-align: center;
   }
 }
