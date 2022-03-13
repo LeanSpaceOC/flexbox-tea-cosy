@@ -123,10 +123,24 @@ main {
   width:300px;
   margin: 5px 20px;
 }
-/* media screen with .locations height at auto*/
 @media screen and (max-width: 728px) {
   .locations {
     height: auto;
   }
 }
 
+footer {
+  width: 100%;
+}
+.footer-contact {
+  height: 200px;
+}
+.footer-copyright {
+  margin-top: 20px;
+  text-align: left;
+}
+@media screen and (max-width: 728px) {
+  .locations {
+    height: auto;
+  }
+}
